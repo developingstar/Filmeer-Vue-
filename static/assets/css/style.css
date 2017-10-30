@@ -1,0 +1,503 @@
+html
+{
+    height: 100%;
+}
+body{
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #666;    
+    background-color: #f1f0ef;
+    font-weight: 500;
+	font-size: 12px;
+	font-family: 'Source Sans Pro';
+    -webkit-font-smoothing: antialiased;   
+}
+a{
+    text-decoration: none;
+}
+p{
+	display: inline-block;
+	color: #000;
+}
+td{
+	text-align: center;
+}
+
+thead tr{
+	height: 25px;
+	background: #EBEBEB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#EBEBEB, #FFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EBEBEB, #FFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EBEBEB, #FFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#EBEBEB, #FFF); /* Standard syntax (must be last) */
+	border:1px solid #b7b7b7;
+}
+tbody tr{
+	height: 30px;	
+}
+th{
+	font-size: 15px;
+	color: #000;	
+}
+td{
+	font-size:18px;
+	color: #000;
+}
+td:first-child{
+	color: #0050a1;	
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+input{
+	border:1px solid #868686;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #e8f0ff;
+}
+
+.clear{
+	clear:both;
+}
+
+
+.admin-header{
+	height: 50px;	
+	border-bottom: 1px solid #e1e1e1;		
+	font-size: 18px;
+	font-weight: bold;
+	color:#868686;
+	background-color: #FFF;
+}
+.admin-header .container{
+	width: 1200px; 
+	margin: auto;
+}
+.admin-header a{
+	color: #868686;
+}
+.admin-header .menu-logo{
+	float: left;	
+	margin: 0 0 0 15px;
+	line-height: 50px;
+	font-size: 18px;
+	font-style: italic;	
+	font-weight: bolder;
+}
+
+.admin-header .menu-logo a{
+	color: #ff00b4;
+}
+.admin-header .menu-item{
+	float: left;
+	margin-left: 30px;	
+	line-height: 50px;	
+}
+
+.admin-header .register{
+	float: right;
+	margin-right: 15px;	
+	line-height: 50px;	
+}
+
+.body{	
+	width:740px;
+	margin: 0 auto;
+}
+.body .body-top {
+	margin-top: 5px;
+}
+.body .body-top .login{
+	float: left;
+	width: 460px;
+	border:1px solid #e1e1e1;
+	background-color: #FFF;
+}
+
+.body .body-top .login .login-input{
+	width:315px;
+	float: left;
+}
+
+.body .body-top .login .login-input label{
+	width:50px;
+	display: inline-block;
+	text-align: center;
+	background-color: #e1e1e1;
+}
+.body .body-top .login .login-input input{
+	height: 23px;
+	width: 250px;
+}
+.body .body-top .login .login-input .login-user-name{
+	height: 26px;
+    margin-top: 3px;
+}
+
+.body .body-top .login .login-input .login-user-password{
+	height: 26px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+}
+    
+.body .body-top .login .login-component{
+	float: right;
+	padding-right: 10px;
+	margin-top: 5px;
+}
+.body .body-top .login .login-component .unchecked{
+	width: 16px;
+	height: 17px;
+	border: 1px solid #868686;
+    border-radius: 5px;
+    float: right;
+}
+.body .body-top .login .login-component .checked{
+	width: 16px;
+    height: 17px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    float: right;
+    background-color: #fe8900;
+    display: none;
+}
+.body .body-top .login .login-component .remember{
+	float: right;
+	color: #000;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.body .body-top .login .login-component .btn-login{
+	width: 128px;
+    height: 35px;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    line-height: 37px;
+    border: 1px solid #fecb8e;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+.body .body-top .ad-pic{
+	float: right;
+	width: 250px;
+	height: 70px;
+	background-image: url("../images/adpicture.png");
+}
+
+.body .body-content{
+	border:1px solid #e1e1e1;
+	background-color: #FFF;
+
+	margin-top: 10px;
+}
+.body .body-content .news{
+	clear:both;
+	margin:5px;
+	height: 56px;
+	background-color: #fafafa;
+}
+
+.body .body-content .news .news-title{
+	float: left;
+	padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00F;
+}
+.body .body-content .news .news-image{
+	float: left;
+	width: 100px;
+	height: 56px;
+	background-image: url("../images/news.png");
+}
+
+.body .body-content .loading{
+	float: right;
+    width: 240px;
+    height: 20px;
+    color: #000;
+    background-color: #e1e1e1;
+    font-size: 18px;
+}
+
+.body .body-content .loading  .loading-text{
+	float: left;
+	margin-left: 5px;
+}
+
+.body .body-content .loading .loading-img{
+	float: left;
+	width: 16px;
+	height: 17px;
+	margin-top: 3px;
+    margin-left: 50px;
+	background: url("../images/loading.png") no-repeat;
+}
+.footer{
+	position: absolute;
+	height:50px;
+	width: 100%;
+	background-color: #FFF;
+	bottom: 0;
+	border-top: 1px solid #e1e1e1;
+}
+
+.footer .container{
+	width:740px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+
+.footer .container .footer-comment{
+	color: #000;
+	font-size: 18px;
+	float:left;
+}
+
+.footer .container .footer-mark{
+	float:left;
+	width:128px;
+	height: 37px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+.footer .container .copyright{
+	float:right;
+	color: #868686;
+	font-size: 18px;
+}
+
+.admin-body{
+	width: 100%;
+	background-color: #f1f0ef;
+	padding-top: 40px;
+	height: calc(100% - 150px);
+}
+
+.admin-body .content{
+	width:740px;
+	height: 100%;
+	margin: auto;
+	background-color: #FFF;
+	border: 1px solid #e1e1e1;	
+}
+
+.body .analyze{
+	width:700px;
+	margin: auto;
+}
+.body .tbl-analyze{
+	width:100%;
+	border: 1px solid #e1e1e1;	
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+.body .analyze .tbl-posts{
+	width:100%;
+	border: 1px solid #e1e1e1;	
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+.biz{
+	margin-top: 50px !important;
+}
+thead tr{
+	height: 25px;
+	background: #EBEBEB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#EBEBEB, #FFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EBEBEB, #FFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EBEBEB, #FFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#EBEBEB, #FFF); /* Standard syntax (must be last) */
+	border:1px solid #b7b7b7;
+}
+tbody tr{
+	height: 30px;
+}
+th{
+	font-size: 15px;
+	color: #000;	
+}
+td{
+	font-size:18px;
+	color: #000;
+}
+td:first-child{
+	color: #0050a1;	
+}
+
+
+tbody tr:nth-child(odd){
+	background-color: #efefef;
+}
+
+tbody tr:nth-child(even){
+	background-color: #FFF;	
+}
+
+.tbl-analyze .category{
+	width: 300px;
+}
+.tbl-analyze .new{
+	width: 60px;
+}
+.tbl-analyze .total{
+	width: 70px;
+}
+.tbl-analyze .on-going{
+	width: 100px;
+}
+
+.tbl-analyze .ad-category{
+	width: 300px;
+}
+.tbl-analyze .status{
+	width: 80px;
+}
+.tbl-analyze .duration{
+	width: 100px;
+}
+.tbl-analyze .views{
+	width: 60px;
+}
+.tbl-analyze .clicks{
+	width: 50px;
+}
+.tbl-analyze .budget{
+	width: 180px;
+}
+
+.tbl-analyze .start-date{
+	width: 200px;
+}
+.tbl-credit{
+	width:45%;
+	margin-top:10px;
+	border: 1px solid #e1e1e1;	
+	border-collapse: collapse;
+}
+
+th, td{
+	text-align: center;	
+}
+
+tr td:first-child{
+	text-align: left;
+	padding-left: 15px;
+}
+
+.content .title{
+	float: left;
+	color: #000;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 5px;
+}
+.upload-picture{
+	float: right;
+	width: 260px;
+	height: 140px;
+	border:1px solid #e1e1e1;
+	background-color: #f7f7f7;
+	padding: 10px 0 0 10px;
+	color: #0050a1;
+	font-size: 18px;
+}
+#graph{
+	margin: auto;
+	background-color: #f1f0ef;
+	border: 1px solid #e1e1e1;
+	margin-top: 20px;
+}
+.description td{
+	text-align: right;
+	padding-right: 15px;	
+}
+.description .td-description{
+	text-align: left !important; 
+	font-size:14px;
+	padding-top: 15px;
+	padding-bottom:25px;
+	color: #000;
+}
+
+.campaign-create-row{
+	padding-left:140px;
+}
+.campaign-create-row .campaign-profile {
+	float:left; 
+	width:410px; 
+	height:80px; 
+	background-color:#f3ebe6;
+}
+.campaign-create-row .campaign-profile-note{
+	float:left; 
+	width:160px; 
+	height:80px;
+	background-color:#f7f7f7;
+	border:1px solid #e1e1e1;
+	margin-left:20px;
+}
+
+.campaign-create-row .campaign-profile .campaign-profile-item{
+	margin-top: 10px;
+}
+.campaign-create-row .campaign-profile .item-name{
+	float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.campaign-create-row .campaign-profile .input-name{
+	float:left;
+	width:200px;
+	height: 20px;
+}
+
+.campaign-create-row .campaign-profile .upload-image{
+	float: left;
+	height: 24px;    
+	width: 204px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+
+.select-div .dropdown{
+    background-color: #FFF !important;
+}
+
+.select-div .dropdown-toggle{
+	height: 25px !important;	
+}
+
+.select-div .v-select .open-indicator 
+{
+	bottom: 0px !important;
+}
+.create-button{
+	float: right;
+    width: 125px;
+    height: 35px;
+    background: #948f8d;
+    border: 1px solid #fedcb2;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #FFF;
+}
+
+.select-div .v-select .selected-tag{
+	margin-top: 0px !important; 
+}
+
+.v-select input[type=search], .v-select input[type=search]:focus{
+	padding: 0 !important;
+}
